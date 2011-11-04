@@ -1,3 +1,9 @@
+# revision 15878
+# category Package
+# catalog-ctan /fonts/orkhun
+# catalog-date 2009-04-22 11:33:20 +0200
+# catalog-license lppl
+# catalog-version undef
 Name:		texlive-orkhun
 Version:	20090422
 Release:	1
@@ -49,6 +55,7 @@ MetaFont source.
 %doc %{_texmfdistdir}/doc/fonts/orkhun/README_Orkhun.txt
 %doc %{_texmfdistdir}/doc/fonts/orkhun/rakhimov.pdf
 %doc %{_texmfdistdir}/doc/fonts/orkhun/rakhimov.tex
+%doc %{_tlpkgobjdir}/*.tlpobj
 
 #-----------------------------------------------------------------------
 %prep
@@ -59,3 +66,5 @@ MetaFont source.
 %install
 mkdir -p %{buildroot}%{_texmfdistdir}
 cp -fpar fonts doc %{buildroot}%{_texmfdistdir}
+mkdir -p %{buildroot}%{_tlpkgobjdir}
+cp -fpa tlpkg/tlpobj/*.tlpobj %{buildroot}%{_tlpkgobjdir}
