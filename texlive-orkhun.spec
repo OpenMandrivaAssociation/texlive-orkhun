@@ -6,7 +6,7 @@
 # catalog-version undef
 Name:		texlive-orkhun
 Version:	20090422
-Release:	5
+Release:	6
 Summary:	A font for orkhun script
 Group:		Publishing
 URL:		http://www.ctan.org/tex-archive/fonts/orkhun
