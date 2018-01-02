@@ -1,9 +1,3 @@
-# revision 15878
-# category Package
-# catalog-ctan /fonts/orkhun
-# catalog-date 2009-04-22 11:33:20 +0200
-# catalog-license lppl
-# catalog-version undef
 Name:		texlive-orkhun
 Version:	20170414
 Release:	1
@@ -32,20 +26,9 @@ MetaFont source.
 
 #-----------------------------------------------------------------------
 %files
-%{_texmfdistdir}/fonts/source/public/orkhun/orhant.mf
-%{_texmfdistdir}/fonts/source/public/orkhun/orhant11.mf
-%{_texmfdistdir}/fonts/source/public/orkhun/orhant14.mf
-%{_texmfdistdir}/fonts/source/public/orkhun/orhant16.mf
-%{_texmfdistdir}/fonts/source/public/orkhun/orhant20.mf
-%{_texmfdistdir}/fonts/source/public/orkhun/orhant25.mf
-%{_texmfdistdir}/fonts/tfm/public/orkhun/orhant11.tfm
-%{_texmfdistdir}/fonts/tfm/public/orkhun/orhant14.tfm
-%{_texmfdistdir}/fonts/tfm/public/orkhun/orhant16.tfm
-%{_texmfdistdir}/fonts/tfm/public/orkhun/orhant20.tfm
-%{_texmfdistdir}/fonts/tfm/public/orkhun/orhant25.tfm
-%doc %{_texmfdistdir}/doc/fonts/orkhun/README_Orkhun.txt
-%doc %{_texmfdistdir}/doc/fonts/orkhun/rakhimov.pdf
-%doc %{_texmfdistdir}/doc/fonts/orkhun/rakhimov.tex
+%{_texmfdistdir}/fonts/source/public/orkhun
+%{_texmfdistdir}/fonts/tfm/public/orkhun
+%doc %{_texmfdistdir}/doc/fonts/orkhun
 
 #-----------------------------------------------------------------------
 %prep
@@ -56,17 +39,3 @@ MetaFont source.
 %install
 mkdir -p %{buildroot}%{_texmfdistdir}
 cp -fpar fonts doc %{buildroot}%{_texmfdistdir}
-
-
-%changelog
-* Wed Jan 04 2012 Paulo Andrade <pcpa@mandriva.com.br> 20090422-2
-+ Revision: 754555
-- Rebuild to reduce used resources
-
-* Sat Nov 05 2011 Paulo Andrade <pcpa@mandriva.com.br> 20090422-1
-+ Revision: 719168
-- texlive-orkhun
-- texlive-orkhun
-- texlive-orkhun
-- texlive-orkhun
-
